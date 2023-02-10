@@ -1,0 +1,132 @@
+:root{
+    --green:#609EA2 ;
+    --black:#332C39;
+    --red:#C92C6D;
+    --grey:#F0EEED;
+
+}
+body,h2{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.landing{
+    background-image: url('../Foodparadise/pexels-karolina-grabowska-4198756.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--black);
+}
+header a{
+    text-decoration: none;
+    color:var(--green) ;
+    min-width: 180px;
+}
+header{
+    display: flex;
+    padding: 1em;
+    row-gap: .5 em;
+    flex-wrap: wrap;
+}
+#logo{
+    flex: 3;
+    font-size: 2em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: .5;
+    font-size: 1.2em;
+}
+nav a:hover{
+    color: var(--black);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+
+}
+.tagline2{
+    color: var(--black);
+    font-size: 1.3em;
+}
+.callus{
+    font-size: 1.2em;
+}
+.maintext div{
+    margin-top: 0.75em;
+    
+}
+.maintext button{
+    width: 15vw;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: .5em;
+    background-color: var(--green);
+    color: var(--grey);
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    background:linear-gradient(to right ,rgba(61, 35, 47, 0),rgb(61, 44, 42));
+    color: var(--black);
+}
+#menuheading,#locheading{
+    font-size: 2.3em;
+    background:linear-gradient(to right ,rgba(61, 35, 47, 0),rgb(61, 44, 42));
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.3em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row:span 2;
+}
+.locations{
+    background:linear-gradient(to right ,rgba(61, 35, 47, 0),rgb(61, 44, 42));
+    color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
